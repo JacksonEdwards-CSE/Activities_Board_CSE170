@@ -1,0 +1,67 @@
+/* Basic navigation styles for nav.html */
+:root{
+	--nav-bg:#2c3e50;
+	--nav-text:#ecf0f1;
+	--nav-accent:#3498db;
+}
+
+nav {
+	background: var(--nav-bg);
+	color: var(--nav-text);
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+nav .container{
+	max-width:1100px;
+	margin:0 auto;
+	padding:0 16px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	height:64px;
+}
+
+nav .brand{
+	font-weight:700;
+	font-size:1.1rem;
+}
+
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	gap:12px;
+	align-items:center;
+}
+
+nav a{
+	color:var(--nav-text);
+	text-decoration:none;
+	padding:8px 12px;
+	border-radius:6px;
+	transition:background .15s, color .15s;
+}
+
+nav a:hover{background:rgba(255,255,255,0.04); color:var(--nav-text)}
+
+nav a.active{
+	background: linear-gradient(90deg,var(--nav-accent), #6dd5fa25);
+	color:#fff;
+}
+
+/* Mobile: collapse to a stacked layout */
+@media (max-width:600px){
+	nav .container{height:auto; padding:8px}
+	nav ul{flex-direction:column; gap:6px; width:100%}
+	nav a{display:block; width:100%}
+}
+
+/* Utility: right aligned actions */
+.nav-actions{display:flex; gap:8px; align-items:center}
+
+/* small helper for icons */
+.nav-icon{width:20px; height:20px; display:inline-block; vertical-align:middle}
+
+/* Accessibility focus */
+nav a:focus{outline:3px solid rgba(52,152,219,0.25); outline-offset:2px}
