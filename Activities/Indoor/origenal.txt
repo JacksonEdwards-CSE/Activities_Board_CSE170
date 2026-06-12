@@ -1,66 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="indoor.css">
-        <title>Indoor Activities</title>
-    </head>
+<body>
+        <header>
 
-
-
-    <body>
-        <div id="navbar-placeholder"></div>
-
-        <script>
-        fetch('/../Nav/nav.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navigation:', error));
-        </script>
+        </header>
 
         <iframe id="top-nav" src="/../Nav/nav.html" title="Navigation" aria-label="Site navigation"></iframe>
         
         <main>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/legacy-flight.jpg" alt="Legacy flight image">
                 <h1 class="card-title">Legacy Flight Museum</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/4JBB7oPc1tx2EJR88">View on Google Maps</a>
                 <p class="card-discription">A great place to see aircraft that United States Military Veterans flew.</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/re-escape.jpg" alt="Re-escape image">
                 <h1 class="card-title">Rexburg Re-escape</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/KsjTMgc6hwKM98PY6">View on Google Maps</a>
                 <p class="card-discription">A fun way to challenge your brain and try something new. This escape room is $14-$16 depending on group size, and offers fun challenges for most age ranges.</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/fat-cats.jpg" alt="FatCats image">
                 <h1 class="card-title">FatCats</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/EdhX7g8MJGSygmCT9">View on Google Maps</a>
                 <p class="card-discription">Here you can watch movies, play arcade games, bowl, and more! This is your one stop location for all things fun!</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/gravity-factory.jpg" alt="Gravity Factory image">
                 <h1 class="card-title">Gravity Factory</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/NpBR1hUDCbMSv38L7">View on Google Maps</a>
                 <p class="card-discription">A trampoline park that offers different attractions, events, group discounts, and lots of fun.</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/rock-gym.jpg" alt="Rock gym image">
                 <h1 class="card-title">The Rock Gym</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/8ze1sncCoke3QmXM8">View on Google Maps</a>
                 <p class="card-discription">A fun rock climbing gym with various discounts on different nights.</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/grand-teton-pickleball.jpeg" alt="Grand teton image">
                 <h1 class="card-title">Grand Teton Pickleball</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/eZMohapr2c72TEiY7">View on Google Maps</a>
                 <p class="card-discription">An indoor pickleball gym that has free and paid membership registration options.</p>
             </div>
-            <div>
+            <div class="card">
                 <img class="card-img" src="images/green-canyon.jpg" alt="Green canyon image">
                 <h1 class="card-title">Green Canyon Hot Springs Indoor Pool</h1>
                 <a class="card-location" href="https://maps.app.goo.gl/jSzR36x4rwTakY4i6">View on Google Maps</a>
@@ -72,4 +54,3 @@
 
         </footer>
     </body>
-</html>

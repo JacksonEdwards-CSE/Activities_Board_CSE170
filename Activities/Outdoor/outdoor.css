@@ -1,0 +1,11 @@
+div {
+  padding: 10px;
+  margin: 8px;
+}
+
+div img {
+  width: 50vw;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
