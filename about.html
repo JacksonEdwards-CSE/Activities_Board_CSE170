@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('/../Nav/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+
+    <main>
+        <section>
+            <h1>About Our Website</h1>
+            <p>Welcome to our activities website! We are dedicated to providing information about various indoor and outdoor activities for people of all ages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Activities Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

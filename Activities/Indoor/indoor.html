@@ -11,17 +11,14 @@
 
     <body>
         <div id="navbar-placeholder"></div>
-
         <script>
-        fetch('/../Nav/nav.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navigation:', error));
+            fetch('/../Nav/nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
         </script>
-
-        <iframe id="top-nav" src="/../Nav/nav.html" title="Navigation" aria-label="Site navigation"></iframe>
         
         <main>
             <div>
