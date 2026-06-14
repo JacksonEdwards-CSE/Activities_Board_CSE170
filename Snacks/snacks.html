@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snacks</title>
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <h1>Snacks</h1>
+        <p>Page content goes here.</p>
+    </main>
+
+    <script>
+      fetch('/../Nav/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+    </script>
+
+
+
+</body>
+</html>

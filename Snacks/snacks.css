@@ -1,0 +1,7 @@
+/* Reset body margins and push page content below the fixed nav */
+body {
+    margin: 0;
+    padding-top: 70px; /* push page content below nav */
+}
+
+
