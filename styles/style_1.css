@@ -1,0 +1,210 @@
+/* ==========================================================================
+   COLOR PALETTE CONFIGURATION
+   ========================================================================== */
+:root {
+    --clr-cream: #F0EAD2;
+    /* Main Page Background */
+    --clr-light-sage: #DDE5B6;
+    /* Sub-elements / Borders */
+    --clr-sage: #ADC178;
+    /* Accent Highlights / Hover states */
+    --clr-tan: #A98467;
+    /* Subtle divider borders */
+    --clr-dark-brown: #6C584C;
+    /* Header/Footer Backgrounds & Text */
+    --clr-white: #FFFFFF;
+}
+
+/* Base resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--clr-cream);
+    color: var(--clr-dark-brown);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   IMPROVED HEADER STYLES
+   ========================================================================== */
+header {
+    background-color: var(--clr-white);
+    border-bottom: 4px solid var(--clr-sage);
+    padding: 15px 5%;
+    /* Percentage padding scales nicely on large/small monitors */
+    display: flex;
+    justify-content: space-between;
+    /* Pushes logo left, nav right */
+    align-items: center;
+    position: sticky;
+    /* Keeps navigation visible while scrolling */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Target your logo image */
+header>img {
+    height: 50px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    /* Automatically keeps your circular logo perfect */
+    background-color: var(--clr-cream);
+    /* Backup if logo image loading fails */
+}
+
+/* Navigation layout */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--clr-dark-brown);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 8px 4px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+/* Smooth active/hover animation border */
+nav a:hover {
+    color: var(--clr-sage);
+    border-bottom: 2px solid var(--clr-sage);
+}
+
+/* ==========================================================================
+   IMPROVED FOOTER STYLES
+   ========================================================================== */
+footer {
+    background-color: var(--clr-dark-brown);
+    color: var(--clr-white);
+    padding: 50px 5% 20px 5%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Allows sections to wrap elegantly on mobile */
+    gap: 40px;
+}
+
+/* Targets the 3 main column blocks */
+footer>div {
+    flex: 1;
+    min-width: 250px;
+    /* Prevents columns from becoming impossibly narrow */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer h3 {
+    font-size: 18px;
+    color: var(--clr-light-sage);
+    /* Soft contrast against dark brown */
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid var(--clr-tan);
+    padding-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    color: var(--clr-cream);
+    opacity: 0.9;
+}
+
+/* Quick links styling inside footer */
+footer a {
+    font-size: 14px;
+    color: var(--clr-cream);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+footer a:hover {
+    color: var(--clr-sage);
+    text-decoration: underline;
+}
+
+/* Social Media List Layout Fix */
+footer ul {
+    list-style: none;
+    /* Removes bullets */
+    display: flex;
+    gap: 15px;
+    /* Spaces social media icons horizontally */
+    padding: 0;
+}
+
+footer ul li a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+footer ul li a:hover {
+    transform: scale(1.15);
+    /* Subtle pop effect on hover */
+}
+
+/* Style the social icons themselves */
+footer ul img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 6px;
+    /* Smooth rounded corners for icons */
+}
+
+/* Copyright Row */
+footer>p {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: var(--clr-light-sage);
+    border-top: 1px solid var(--clr-tan);
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Query)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer>div {
+        width: 100%;
+        align-items: center;
+        /* Center-align content elements on smaller screens */
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+}
