@@ -19,7 +19,7 @@
     --clr-white: #FFFFFF;
 }
 
-/* Base resets */
+
 * {
     margin: 0;
     padding: 0;
@@ -39,13 +39,10 @@ header {
     background-color: var(--clr-white);
     border-bottom: 4px solid var(--clr-sage);
     padding: 15px 5%;
-    /* Percentage padding scales nicely on large/small monitors */
     display: flex;
     justify-content: space-between;
-    /* Pushes logo left, nav right */
     align-items: center;
     position: sticky;
-    /* Keeps navigation visible while scrolling */
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -58,9 +55,7 @@ header>img {
     max-width: 150px;
     object-fit: contain;
     border-radius: 50%;
-    /* Automatically keeps your circular logo perfect */
     background-color: var(--clr-cream);
-    /* Backup if logo image loading fails */
 }
 
 /* Navigation layout */
@@ -80,7 +75,7 @@ nav a {
     border-bottom: 2px solid transparent;
 }
 
-/* Smooth active/hover animation border */
+
 nav a:hover {
     color: var(--clr-sage);
     border-bottom: 2px solid var(--clr-sage);
@@ -98,15 +93,13 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* Allows sections to wrap elegantly on mobile */
     gap: 40px;
 }
 
-/* Targets the 3 main column blocks */
+
 footer>div {
     flex: 1;
     min-width: 250px;
-    /* Prevents columns from becoming impossibly narrow */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -115,7 +108,6 @@ footer>div {
 footer h3 {
     font-size: 18px;
     color: var(--clr-light-sage);
-    /* Soft contrast against dark brown */
     text-transform: uppercase;
     letter-spacing: 1.2px;
     border-bottom: 2px solid var(--clr-tan);
@@ -128,7 +120,7 @@ footer p {
     opacity: 0.9;
 }
 
-/* Quick links styling inside footer */
+
 footer a {
     font-size: 14px;
     color: var(--clr-cream);
@@ -142,13 +134,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Social Media List Layout Fix */
+
 footer ul {
     list-style: none;
-    /* Removes bullets */
     display: flex;
     gap: 15px;
-    /* Spaces social media icons horizontally */
     padding: 0;
 }
 
@@ -159,16 +149,14 @@ footer ul li a {
 
 footer ul li a:hover {
     transform: scale(1.15);
-    /* Subtle pop effect on hover */
 }
 
-/* Style the social icons themselves */
+
 footer ul img {
     width: 32px;
     height: 32px;
     object-fit: cover;
     border-radius: 6px;
-    /* Smooth rounded corners for icons */
 }
 
 /* Copyright Row */
@@ -204,7 +192,6 @@ footer>p {
     footer>div {
         width: 100%;
         align-items: center;
-        /* Center-align content elements on smaller screens */
     }
 
     footer ul {
