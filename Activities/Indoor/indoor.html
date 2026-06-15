@@ -1,127 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/style_1.css">
-        <title>Indoor activities</title>
-    </head>
 
-    <header>
-    
-        <img src="" alt="">
-    
-        <nav>
-    
-            <a href="">Home</a>
-    
-            <a href="">Activities</a>
-    
-            <a href="">Food/Snacks</a>
-    
-            <a href="">About</a>
-    
-        </nav>
-    
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_1.css">
+    <title>Indoor Activities</title>
+</head>
 
-    <body>
-        <div id="navbar-placeholder"></div>
-        <script>
-            fetch('/../Nav/nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navigation:', error));
-        </script>
-        
-        <main>
-            <div>
-                <img class="card-img" src="images/legacy-flight.jpg" alt="Legacy flight image">
-                <h1 class="card-title">Legacy Flight Museum</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/4JBB7oPc1tx2EJR88">View on Google Maps</a>
-                <p class="card-discription">A great place to see aircraft that United States Military Veterans flew.</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/re-escape.jpg" alt="Re-escape image">
-                <h1 class="card-title">Rexburg Re-escape</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/KsjTMgc6hwKM98PY6">View on Google Maps</a>
-                <p class="card-discription">A fun way to challenge your brain and try something new. This escape room is $14-$16 depending on group size, and offers fun challenges for most age ranges.</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/fat-cats.jpg" alt="FatCats image">
-                <h1 class="card-title">FatCats</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/EdhX7g8MJGSygmCT9">View on Google Maps</a>
-                <p class="card-discription">Here you can watch movies, play arcade games, bowl, and more! This is your one stop location for all things fun!</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/gravity-factory.jpg" alt="Gravity Factory image">
-                <h1 class="card-title">Gravity Factory</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/NpBR1hUDCbMSv38L7">View on Google Maps</a>
-                <p class="card-discription">A trampoline park that offers different attractions, events, group discounts, and lots of fun.</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/rock-gym.jpg" alt="Rock gym image">
-                <h1 class="card-title">The Rock Gym</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/8ze1sncCoke3QmXM8">View on Google Maps</a>
-                <p class="card-discription">A fun rock climbing gym with various discounts on different nights.</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/grand-teton-pickleball.jpeg" alt="Grand teton image">
-                <h1 class="card-title">Grand Teton Pickleball</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/eZMohapr2c72TEiY7">View on Google Maps</a>
-                <p class="card-discription">An indoor pickleball gym that has free and paid membership registration options.</p>
-            </div>
-            <div>
-                <img class="card-img" src="images/green-canyon.jpg" alt="Green canyon image">
-                <h1 class="card-title">Green Canyon Hot Springs Indoor Pool</h1>
-                <a class="card-location" href="https://maps.app.goo.gl/jSzR36x4rwTakY4i6">View on Google Maps</a>
-                <p class="card-discription">An indoor pool that fills from naturally heated water.</p>
-            </div>
-        </main>
-    </body>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <div>
+            <img class="card-img" src="images/legacy-flight.jpg" alt="Legacy flight image">
+            <h1 class="card-title">Legacy Flight Museum</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/4JBB7oPc1tx2EJR88">View on Google Maps</a>
+            <p class="card-description">A great place to see aircraft that United States Military Veterans flew.</p>
+        </div>
+        <div>
+            <img class="card-img" src="images/re-escape.jpg" alt="Re-escape image">
+            <h1 class="card-title">Rexburg Re-escape</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/KsjTMgc6hwKM98PY6">View on Google Maps</a>
+            <p class="card-description">A fun way to challenge your brain and try something new. This escape room is
+                $14-$16 depending on group size, and offers fun challenges for most age ranges.</p>
+        </div>
+        <div>
+            <img class="card-img" src="images/fat-cats.jpg" alt="FatCats image">
+            <h1 class="card-title">FatCats</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/EdhX7g8MJGSygmCT9">View on Google Maps</a>
+            <p class="card-description">Here you can watch movies, play arcade games, bowl, and more! This is your one
+                stop location for all things fun!</p>
+        </div>
+        <div>
+            <img class="card-img" src="images/gravity-factory.jpg" alt="Gravity Factory image">
+            <h1 class="card-title">Gravity Factory</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/NpBR1hUDCbMSv38L7">View on Google Maps</a>
+            <p class="card-description">A trampoline park that offers different attractions, events, group discounts,
+                and lots of fun.</p>
+        </div>
+        <div>
+            <img class="card-img" src="images/rock-gym.jpg" alt="Rock gym image">
+            <h1 class="card-title">The Rock Gym</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/8ze1sncCoke3QmXM8">View on Google Maps</a>
+            <p class="card-description">A fun rock climbing gym with various discounts on different nights.</p>
+        </div>
+        <div>
+            <img class="card-img" src="images/grand-teton-pickleball.jpeg" alt="Grand Teton image">
+            <h1 class="card-title">Grand Teton Pickleball</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/eZMohapr2c72TEiY7">View on Google Maps</a>
+            <p class="card-description">An indoor pickleball gym that has free and paid membership registration options.
+            </p>
+        </div>
+        <div>
+            <img class="card-img" src="images/green-canyon.jpg" alt="Green canyon image">
+            <h1 class="card-title">Green Canyon Hot Springs Indoor Pool</h1>
+            <a class="card-location" href="https://maps.app.goo.gl/jSzR36x4rwTakY4i6">View on Google Maps</a>
+            <p class="card-description">An indoor pool that fills from naturally heated water.</p>
+        </div>
+    </main>
 
     <footer>
-    
         <div>
             <h3>About This Site</h3>
-    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-                atque quasi</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque quasi</p>
         </div>
-    
         <div>
             <h3>Quick Links</h3>
-    
             <a href="">Activities</a>
-    
             <a href="">Food</a>
-    
             <a href="">About</a>
         </div>
-    
         <div>
-    
             <h3>Social Media</h3>
-    
             <ul>
-                <li>
-                    <a href="https://instagram.com"><img src="social_media/instagram.jpg" alt="Instagram"></a>
-                </li>
-                <li>
-                    <a href="https://facebook.com"><img src="social_media/facebook.png" alt="Facebook"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.png"><img src="social_media/twitter.png" alt="Twitter"></a>
-                </li>
+                <li><a href="https://instagram.com"><img src="social_media/instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="https://facebook.com"><img src="social_media/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img src="social_media/twitter.png" alt="Twitter"></a></li>
             </ul>
-    
         </div>
-    
-        <p>&copy; 2026 Activity Board</p>
-    
+        <p>© 2026 Activity Board</p>
     </footer>
 
+    <script>
+        fetch('/../Nav/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+</body>
 
 </html>
