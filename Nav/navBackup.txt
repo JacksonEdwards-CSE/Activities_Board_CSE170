@@ -1,0 +1,15 @@
+    <header>
+
+        <!--DO NOT TOUCH THIS-->
+            <div id="navbar-placeholder"></div>
+            <script>
+                fetch('/../Nav/nav.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+            </script>
+        <!--DO NOT TOUCH THIS-->
+
+    </header>
