@@ -1,19 +1,36 @@
-header nav {
-	background-color: #333;
-	color: white;
+/* ==========================================================================
+   NAVIGATION LINKS ONLY
+   ========================================================================== */
+
+/* The list container for the menu items */
+.nav-list {
+	list-style: none;
 	display: flex;
-	align-items: center;
-	padding: 10px 20px;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
 }
 
-header nav a {
-	color: white;
+/* Individual navigation link styling */
+.nav-list li a {
+	font-family: 'Poppins', sans-serif;
+	color: #6C584C;
+	/* Dark Brown primary text color from the palette */
 	text-decoration: none;
-	margin-right: 20px;
-	font-size: 18px;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	padding: 8px 4px;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	/* Smooth hover line anchor */
 }
 
-header nav img {
-    width: 200px;
-    height: auto;
+/* Hover state for the navigation links */
+.nav-list li a:hover {
+	color: #ADC178;
+	/* Sage Green hover highlight color from the palette */
+	border-bottom: 2px solid #ADC178;
+	/* Adds the bottom accent underline on hover */
 }
+
