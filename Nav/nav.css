@@ -34,3 +34,26 @@
 	/* Adds the bottom accent underline on hover */
 }
 
+
+header nav a img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM (Media Query)
+   ========================================================================== */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  .nav-list {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
