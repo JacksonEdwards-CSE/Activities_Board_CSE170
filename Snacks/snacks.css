@@ -1,14 +1,2 @@
 
-header {
-    background-color: #FFFFFF !important;
-    /* Pure white header card background */
-    border-bottom: 4px solid #ADC178;
-    /* 1. Sage Green (#ADC178) Accent Border */
-    padding: 10px 5%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
 
