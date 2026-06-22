@@ -35,6 +35,16 @@
 }
 
 
+header nav {
+  background-color: #FFFFFF !important;
+  /* Overrides the dark #333 background from nav.css */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
 header nav a img {
   width: 180px;
   height: auto;
@@ -57,3 +67,5 @@ header nav a img {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+}

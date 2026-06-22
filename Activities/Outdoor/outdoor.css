@@ -14,22 +14,6 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-header nav {
-  background-color: #FFFFFF !important;
-  /* Overrides the dark #333 background from nav.css */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-
-header nav a img {
-  width: 180px;
-  height: auto;
-  object-fit: contain;
-}
-
 
 
 /* ==========================================================================
