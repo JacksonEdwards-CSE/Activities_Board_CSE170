@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <title>Snacks</title>
 </head>
+
+<header>
+
+    <!--DO NOT TOUCH THIS-->
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('/../Nav/nav.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+        </script>
+    <!--DO NOT TOUCH THIS-->
+
+</header>
+
 <body>
-
-    <header>
-
-        <!--DO NOT TOUCH THIS-->
-            <div id="navbar-placeholder"></div>
-            <script>
-                fetch('/../Nav/nav.html')
-                .then(response => response.text())
-                .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navigation:', error));
-            </script>
-        <!--DO NOT TOUCH THIS-->
-
-    </header>
 
     <main>
         <h1>Snacks</h1>
         <p>Page content goes here.</p>
     </main>
 
-
-    <footer> <!--I fixed the footer-->
-        <!--DO NOT TOUCH THIS-->
-        <div id="footer-placeholder"></div>
-        <script>
-            fetch('/../FootFolder/footer.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-        </script>
-        <!--DO NOT TOUCH THIS-->
-
-    </footer>
-
-
 </body>
+
+<footer> <!--I fixed the footer-->
+    <!--DO NOT TOUCH THIS-->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/../FootFolder/footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <!--DO NOT TOUCH THIS-->
+
+</footer>
+
 </html>

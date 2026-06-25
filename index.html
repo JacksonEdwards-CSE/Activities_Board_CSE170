@@ -7,23 +7,27 @@
     <script src="board.js" defer></script>
     <title>Activities Board</title>
 </head>
+
+<header>
+
+    <!--DO NOT TOUCH THIS-->
+        <div id="navbar-placeholder"></div>
+        <script>
+            fetch('/../Nav/nav.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navigation:', error));
+        </script>
+    <!--DO NOT TOUCH THIS-->
+
+</header>
+
+
 <body>
     
-    <header>
 
-        <!--DO NOT TOUCH THIS-->
-            <div id="navbar-placeholder"></div>
-            <script>
-                fetch('/../Nav/nav.html')
-                .then(response => response.text())
-                .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navigation:', error));
-            </script>
-        <!--DO NOT TOUCH THIS-->
-
-    </header>
         
     <main>
 
@@ -62,9 +66,9 @@
                 vel rerum fugit.</p>
 
             <div>
-                <h2>Featured Activities</h2>
+                <h2>Featured Activities</h2> <!--made the h3s into link for ease of use/ friendly UI-->
 
-                <h3>Indoor Activities</h3>
+                <h3> <a href="Activities/Indoor/indoor.html">Indoor Activities</a></h3>
 
                 <div class="card">
                     <img class="card-img" src="Activities/Outdoor/images/zion-park.jpg" alt="Zion National Park">
@@ -82,7 +86,7 @@
 
                 <img src="" alt="">
 
-                <h3>Outdoor Activities</h3>
+                <h3> <a href="Activities/Outdoor/outdoor.html">Outdoor Activities</a></h3>
 
                 <img src="" alt="">
 
@@ -95,7 +99,7 @@
             <div>
                 <h2>Featured Activities</h2>
 
-                <h3>Meals</h3>
+                <h3> <a href="/Snacks/snacks.html">Meals</a></h3> <!--Will there be a specific page for meals?-->
 
                 <img src="" alt="">
 
@@ -103,7 +107,7 @@
 
                 <img src="" alt="">
 
-                <h3>Snacks</h3>
+                <h3> <a href="/Snacks/snacks.html">Snacks</a></h3>
 
                 <img src="" alt="">
 
@@ -115,21 +119,22 @@
 
         </section>
     </main>
-        
-        <footer> <!--I fixed the footer-->
-            <!--DO NOT TOUCH THIS-->
-            <div id="footer-placeholder"></div>
-            <script>
-                fetch('/../FootFolder/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-            </script>
-            <!--DO NOT TOUCH THIS-->
-
-        </footer>
 
 </body>
+
+<footer> <!--I fixed the footer-->
+    <!--DO NOT TOUCH THIS-->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/../FootFolder/footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <!--DO NOT TOUCH THIS-->
+
+</footer>
+
 </html>
