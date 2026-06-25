@@ -2,3 +2,54 @@ div h3 a {
     text-decoration: none;
     color: black;
 }
+/* -----Testing Modal CSS----- */
+
+dialog {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0,0,0,.75);
+    z-index: 2;
+    position: fixed;
+    top: 208px;
+}
+
+#card-modal{
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 90%;
+    justify-self: center;
+    margin: 100px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#modal-img{
+    width: 250px;
+    grid-row: 1/3;
+    justify-self: center;
+    box-shadow: -5px 4px 15px rgb(73, 73, 73);
+}
+
+#modal-description
+
+.unhide{
+    display: block;
+}
+
+.card{
+    background-color: lightgray;
+}
+
+.card-img{
+    width: 250px;
+}
+
+/* --------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
