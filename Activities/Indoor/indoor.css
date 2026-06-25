@@ -1,8 +1,44 @@
+:root {
+    --light: #f0ead2;
+    --light-green: #dde5b6;
+    --green: #adc178;
+    --brown: #a98467;
+    --dark: #6c584c;
+}
 
+* {
+    box-sizing: border-box;
+}
 
+.body-container {
+    margin: 20px auto;
+}
 
-/*this is what makes the images smaller or bigger*/
-div img{
-  width: 300px;
-  height: auto;
+.card {
+    background-color: var(--light-green);
+    border: 3px solid var(--dark);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+
+    display: flex;
+    margin: 10px
+}
+
+.card img {
+    border-right: 3px solid var(--dark);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 0px 10px #00000050;
+    margin-right: 30px;
+}
+
+.card-content {
+    margin-left: 10px;
+}
+.card-content h1 {
+    color: var(--dark)
+}
+.card-content p, a {
+    color: var(--brown)
 }
