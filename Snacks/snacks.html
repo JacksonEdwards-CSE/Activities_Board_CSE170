@@ -28,21 +28,89 @@
         <p>Page content goes here.</p>
     </main>
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Snacks in Rexburg</title>
+
+    <link rel="stylesheet" href="styles/snacks.css">
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main>
+
+        <h1>Food & Snacks in Rexburg</h1>
+
+        <div class="card">
+            <img class="card-img" src="images/junes-place.jpg" alt="June's Place">
+            <h2 class="card-title">June's Place</h2>
+            <a class="card-location"
+                href="https://maps.google.com/?q=June's+Place+Rexburg+ID"
+                target="_blank">
+                View on Google Maps
+            </a>
+            <p class="card-description">
+                A local Rexburg favorite serving comfort food, burgers,
+                sandwiches, and homemade desserts.
+            </p>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="images/crispy-cones.jpg" alt="Crispy Cones">
+            <h2 class="card-title">Crispy Cones</h2>
+            <a class="card-location"
+                href="https://maps.google.com/?q=Crispy+Cones+Rexburg+ID"
+                target="_blank">
+                View on Google Maps
+            </a>
+            <p class="card-description">
+                Famous for its warm pastry cones filled with ice cream and toppings.
+            </p>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="images/red-rabbit-grill.jpg" alt="Red Rabbit Grill">
+            <h2 class="card-title">Red Rabbit Grill</h2>
+            <a class="card-location"
+                href="https://maps.google.com/?q=Red+Rabbit+Grill+Rexburg+ID"
+                target="_blank">
+                View on Google Maps
+            </a>
+            <p class="card-description">
+                Known for delicious burgers, sandwiches, fries, and shakes.
+            </p>
+        </div>
+
+        <!-- Add the rest of your cards here -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rexburg Snacks. All rights reserved.</p>
+    </footer>
+
 </body>
 
 <footer> <!--I fixed the footer-->
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-        fetch('/../FootFolder/footer.html')
+      fetch('/../Nav/nav.html')
         .then(response => response.text())
         .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
+          document.getElementById('navbar-placeholder').innerHTML = data;
         })
-        .catch(error => console.error('Error loading footer:', error));
+        .catch(error => console.error('Error loading navigation:', error));
     </script>
     <!--DO NOT TOUCH THIS-->
 
-</footer>
 
+
+</body>
 </html>
