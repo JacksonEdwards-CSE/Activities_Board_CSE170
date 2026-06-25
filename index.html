@@ -129,7 +129,7 @@
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-        fetch('FootFolder/footer.html')
+        fetch('/FootFolder/footer.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
