@@ -1,79 +1,64 @@
 header {
     background-color: #FFFFFF !important;
-    /* Pure white header card background */
-    border-bottom: 4px solid #ADC178;
-    /* 1. Sage Green (#ADC178) Accent Border */
-    padding: 10px 5%;
+    border-bottom: 2px solid #ADC178;
+    padding: 4px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
 }
 
-/* The list container for the menu items */
-.nav-list {
+nav {
 	list-style: none;
 	display: flex;
-	gap: 30px;
+	gap: 18px;
+	margin: 0;
+	padding: 0 3%;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 18px;
 	margin: 0;
 	padding: 0;
+	align-items: center;
 }
 
-/* Individual navigation link styling */
-.nav-list li a {
+nav li a {
 	font-family: 'Poppins', sans-serif;
 	color: #6C584C;
-	/* Dark Brown primary text color from the palette */
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 16px;
-	letter-spacing: 0.5px;
-	padding: 8px 4px;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	padding: 6px 3px;
 	transition: all 0.3s ease;
 	border-bottom: 2px solid transparent;
-	/* Smooth hover line anchor */
 }
 
-/* Hover state for the navigation links */
-.nav-list li a:hover {
+nav li a:hover {
 	color: #ADC178;
-	/* Sage Green hover highlight color from the palette */
 	border-bottom: 2px solid #ADC178;
-	/* Adds the bottom accent underline on hover */
-}
-
-
-header nav {
-  background-color: #FFFFFF !important;
-  /* Overrides the dark #333 background from nav.css */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0;
 }
 
 header nav a img {
-  width: 180px;
+  width: 150px;
   height: auto;
   object-fit: contain;
 }
 
-
-
-/* ==========================================================================
-   RESPONSIVE DESIGN SYSTEM (Media Query)
-   ========================================================================== */
 @media (max-width: 768px) {
-  header nav {
-    flex-direction: column !important;
-    gap: 15px;
-  }
-
-  .nav-list {
-    gap: 15px;
+  nav {
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 12px;
   }
 
+  nav li a {
+    font-size: 12px;
+  }
 }
