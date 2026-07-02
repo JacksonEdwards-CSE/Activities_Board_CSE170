@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Snacks/snacks.css">
     <title>Snacks</title>
 </head>
 
@@ -91,22 +92,18 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Rexburg Snacks. All rights reserved.</p>
-    </footer>
-
 </body>
 
 <footer> <!--I fixed the footer-->
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-      fetch('/../Nav/nav.html')
+      fetch('/FootFolder/footer.html')
         .then(response => response.text())
         .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
+          document.getElementById('footer-placeholder').innerHTML = data;
         })
-        .catch(error => console.error('Error loading navigation:', error));
+        .catch(error => console.error('Error loading footer:', error));
     </script>
     <!--DO NOT TOUCH THIS-->
 

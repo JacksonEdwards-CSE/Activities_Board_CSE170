@@ -10,7 +10,8 @@
     box-sizing: border-box;
 }
 
-.body-container {
+/*FYI, this doesn't do anything. It's not connected to anything I can see. This is a class that doesn't have any corresponding HTML elements. */
+.body-container { 
     margin: 20px auto;
 }
 
