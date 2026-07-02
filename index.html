@@ -62,10 +62,10 @@
             something new. From hiking scenic trails to cooking delicious recipes or enjoying creative indoor activities, there's
             something here for everyone.</p>
 
-            <div>
+            <div class="card-container">
                 <h2>Featured Activities</h2> <!--made the h3s into link for ease of use/ friendly UI-->
 
-                <h3> <a href="Activities/Indoor/indoor.html">Indoor Activities</a></h3>
+                <h3> <a href="Indoor/indoor.html">Indoor Activities</a></h3>
                 
                 <img src="" alt="">
                 
@@ -73,11 +73,12 @@
                 
                 <img src="" alt="">
                 
-                <h3> <a href="Activities/Outdoor/outdoor.html">Outdoor Activities</a></h3>
+                <h3> <a href="Outdoor/outdoor.html">Outdoor Activities</a></h3>
                 
                 <div class="card">
-                    <img class="card-img" src="Activities/Outdoor/images/zion-park.jpg" alt="Zion National Park">
+                    <img class="card-img" src="Outdoor/images/zion-park.jpg" alt="Zion National Park">
                     <h1 class="card-title">Zion National Park</h1>
+                    <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.816697637845!2d-112.98858!3d37.29839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80caead08844f8d9%3A0x7c2e3a15aa3656f5!2sZion%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a
                         href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x80caead08844f8d9:0x7c2e3a15aa3656f5?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
                         on Google Maps</a>
@@ -85,14 +86,26 @@
                         Park.</p>
                 </div>
 
-                <div> 
-                    <img class="card-img" src="Activities/Outdoor/images/yosemite.jpg" alt="Yosemite National Park">
+                <div class="card"> 
+                    <img class="card-img" src="Outdoor/images/yosemite.jpg" alt="Yosemite National Park">
                     <h1 class="card-title">Yosemite National Park</h1>
+                    <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.1480321614547!2d-119.5681!3d37.8651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096ec3b08ad6bc7%3A0xb77ef6660622eb35!2sYosemite%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a
                         href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8096ec3b08ad6bc7:0xb77ef6660622eb35?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
                         on Google Maps</a>
                     <p class="card-description">Experience the breathtaking beauty of Yosemite National Park, home to iconic
                         landmarks like El Capitan and Half Dome.</p>
+                </div>
+
+                <div class="card">
+                    <img class="card-img" src="Outdoor/images/grand-canyon.jpg" alt="Grand Canyon National Park">
+                    <h1 class="card-title">Grand Canyon National Park</h1>
+                    <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.5480556556047!2d-112.1401!3d36.1069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2sGrand%20Canyon%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a
+                        href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x873312ae759b4d15:0x1f38a9bec9912029?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
+                        on Google Maps</a>
+                    <p class="card-description">Discover the awe-inspiring Grand Canyon National Park, a natural wonder carved
+                        by the Colorado River over millions of years.</p>
                 </div>
 
             </div>
@@ -127,7 +140,7 @@
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-        fetch('/../FootFolder/footer.html')
+        fetch('/FootFolder/footer.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
