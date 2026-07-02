@@ -13,7 +13,8 @@
     <!--DO NOT TOUCH THIS-->
         <div id="navbar-placeholder"></div>
         <script>
-            fetch('../Nav/nav.html')
+            // Use relative path from this file so GitHub Pages can locate the navigation
+            fetch('Nav/nav.html')
             .then(response => response.text())
             .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
@@ -27,10 +28,8 @@
 
 <body>
 
-        
     <main>
 
-        
         <dialog>
             <div id="card-modal">
 
@@ -140,7 +139,8 @@
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-        fetch('../FootFolder/footer.html')
+    // Use relative path from this file so GitHub Pages can locate the footer
+    fetch('FootFolder/footer.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
