@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Snacks/snacks.css">
-    <title>Snacks</title>
+    <link rel="stylesheet" href="snacks.css">
+    <title>Food & Snacks in Rexburg</title>
 </head>
 
 <header>
@@ -11,7 +12,7 @@
     <!--DO NOT TOUCH THIS-->
         <div id="navbar-placeholder"></div>
         <script>
-            fetch('/Nav/nav.html')
+            fetch('../Nav/nav_outer.html')
             .then(response => response.text())
             .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
@@ -25,67 +26,51 @@
 <body>
 
     <main>
-        <h1>Snacks</h1>
-        <p>Page content goes here.</p>
-    </main>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food & Snacks in Rexburg</title>
-
-    <link rel="stylesheet" href="styles/snacks.css">
-</head>
-<body>
-
-    <div id="navbar-placeholder"></div>
-
-    <main>
-
-        <h1>Food & Snacks in Rexburg</h1>
 
         <div class="card">
-        <img class="card-img" src="Snack_Images/Picture1.jpg" alt="June's Place">
-            <h2 class="card-title">June's Place</h2>
-            <a class="card-location"
-                href="https://maps.google.com/?q=June's+Place+Rexburg+ID"
-                target="_blank">
-                View on Google Maps
-            </a>
-            <p class="card-description">
-                A local Rexburg favorite serving comfort food, burgers,
-                sandwiches, and homemade desserts.
-            </p>
+            <img src="Snack_Images/Picture1.jpg" alt="June's Place">
+            <div class="card-content">
+                <h1 class="card-title">June's Place</h1>
+                <a class="card-location"
+                    href="https://maps.google.com/?q=June's+Place+Rexburg+ID"
+                    target="_blank">
+                    View on Google Maps
+                </a>
+                <p>
+                    A local Rexburg favorite serving comfort food, burgers,
+                    sandwiches, and homemade desserts.
+                </p>
+            </div>
         </div>
 
         <div class="card">
-            <img class="card-img" src="Snack_Images/Picture2.jpg" alt="Crispy Cones">
-            <h2 class="card-title">Crispy Cones</h2>
-            <a class="card-location"
-                href="https://maps.google.com/?q=Crispy+Cones+Rexburg+ID"
-                target="_blank">
-                View on Google Maps
-            </a>
-            <p class="card-description">
-                Famous for its warm pastry cones filled with ice cream and toppings.
-            </p>
+            <img src="Snack_Images/Picture2.jpg" alt="Crispy Cones">
+            <div class="card-content">
+                <h1 class="card-title">Crispy Cones</h1>
+                <a class="card-location"
+                    href="https://maps.google.com/?q=Crispy+Cones+Rexburg+ID"
+                    target="_blank">
+                    View on Google Maps
+                </a>
+                <p>
+                    Famous for its warm pastry cones filled with ice cream and toppings.
+                </p>
+            </div>
         </div>
 
         <div class="card">
-            <img class="card-img" src="Snack_Images/Picture3.jpg" alt="Red Rabbit Grill">
-            <h2 class="card-title">Red Rabbit Grill</h2>
-            <a class="card-location"
-                href="https://maps.google.com/?q=Red+Rabbit+Grill+Rexburg+ID"
-                target="_blank">
-                View on Google Maps
-            </a>
-            <p class="card-description">
-                Known for delicious burgers, sandwiches, fries, and shakes.
-            </p>
+            <img src="Snack_Images/Picture3.png" alt="Red Rabbit Grill">
+            <div class="card-content">
+                <h1 class="card-title">Red Rabbit Grill</h1>
+                <a class="card-location"
+                    href="https://maps.google.com/?q=Red+Rabbit+Grill+Rexburg+ID"
+                    target="_blank">
+                    View on Google Maps
+                </a>
+                <p>
+                    Known for delicious burgers, sandwiches, fries, and shakes.
+                </p>
+            </div>
         </div>
 
         <!-- Add the rest of your cards here -->
@@ -98,7 +83,7 @@
     <!--DO NOT TOUCH THIS-->
     <div id="footer-placeholder"></div>
     <script>
-      fetch('/FootFolder/footer.html')
+      fetch('../FootFolder/footer.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('footer-placeholder').innerHTML = data;
