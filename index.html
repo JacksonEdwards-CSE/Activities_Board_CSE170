@@ -41,38 +41,61 @@
         </dialog>
         
 
-        <section>
+        <section id="heroSection">
 
-            <img src="" alt="">
+            <img id="heroImage" src="images/grand-canyon.jpg" alt="Grand Canyon">
             
-            <h1>Activity Board</h1>
+            <h1 id="heroTitle">Activity Board</h1>
 
-            <p>Discover fun ideas for every season! Whether you're looking for an outdoor adventure, a relaxing indoor hobby, or a new place to explore, Activity Board
+            <p id="heroDescription">Discover fun ideas for every season! Whether you're looking for an outdoor adventure, a relaxing indoor hobby, or a new place to explore, Activity Board
             helps you find activities that match your interests. Browse recommendations, discover local favorites, and plan your
             next adventure.</p>
                 
         </section>
 
-        <section>
+        <section id="content">
 
-            <h1>Welcome!</h1>
+            <div id="card-container">
+                <h2 id="activitiesHeader">Featured Activities</h2> <!--made the h3s into link for ease of use/ friendly UI-->
 
-            <p>Welcome to Activity Board! Our goal is to inspire people to stay active, spend time with family and friends, and try
-            something new. From hiking scenic trails to cooking delicious recipes or enjoying creative indoor activities, there's
-            something here for everyone.</p>
+                <h3 id="indoorHeader"> <a href="Indoor/indoor.html">Indoor Activities</a></h3>
+                
+                <div class="card">
+                    <img class="card-img" src="images/legacy-flight.jpg" alt="Legacy flight image">
+                    <h1 class="card-title">Legacy Flight Museum</h1>
+                    <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.1480321614547!2d-119.5681!3d37.8651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096ec3b08ad6bc7%3A0xb77ef6660622eb35!2sYosemite%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a
+                        href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8096ec3b08ad6bc7:0xb77ef6660622eb35?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
+                        on Google Maps</a>
+                    <p class="card-description">A great place to see aircraft that United States Military Veterans flew.</p>
+                </div>
 
-            <div class="card-container">
-                <h2>Featured Activities</h2> <!--made the h3s into link for ease of use/ friendly UI-->
+                <div class="card">
+                    <img class="card-img" src="images/re-escape.jpg" alt="Re-escape image">
+                        <h1 class="card-title">Rexburg Re-escape</h1>
+                        <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.1480321614547!2d-119.5681!3d37.8651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096ec3b08ad6bc7%3A0xb77ef6660622eb35!2sYosemite%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a
+                        href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8096ec3b08ad6bc7:0xb77ef6660622eb35?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
+                        on Google Maps</a>
+                        <p class="card-description">A fun way to challenge your brain and try something new. This escape room is
+                        $14-$16 depending on group size, and offers fun challenges for most age ranges.</p>
+                </div>
 
-                <h3> <a href="Indoor/indoor.html">Indoor Activities</a></h3>
+                <div class="card">
+                    <img class="card-img" src="images/fat-cats.jpg" alt="FatCats image">
+                        <h1 class="card-title">FatCats</h1>
+                        <iframe class="card-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.1480321614547!2d-119.5681!3d37.8651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096ec3b08ad6bc7%3A0xb77ef6660622eb35!2sYosemite%20National%20Park!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a
+                        href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x8096ec3b08ad6bc7:0xb77ef6660622eb35?entry=gemini&utm_source=gemini&utm_campaign=gem-default">View
+                        on Google Maps</a>
+                        <p class="card-description">Here you can watch movies, play arcade games, bowl, and more! This is your one
+                        stop location for all things fun!</p>
+                </div>
                 
-                <img src="" alt="">
-                
-                <img src="" alt="">
-                
-                <img src="" alt="">
-                
-                <h3> <a href="Outdoor/outdoor.html">Outdoor Activities</a></h3>
+
+
+
+                <h3 id="outdoorHeader"> <a href="Outdoor/outdoor.html">Outdoor Activities</a></h3>
                 
                 <div class="card">
                     <img class="card-img" src="Outdoor/images/zion-park.jpg" alt="Zion National Park">
