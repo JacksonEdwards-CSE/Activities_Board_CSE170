@@ -13,7 +13,7 @@
     <!--DO NOT TOUCH THIS-->
         <div id="navbar-placeholder"></div>
         <script>
-            fetch('/Nav/nav_outer.html')
+            fetch('../Nav/nav_outer.html')
             .then(response => response.text())
             .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
