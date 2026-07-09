@@ -164,5 +164,14 @@ div h3 a {
         justify-self: center;
         margin: 2%;
     }
+
+    .food-section{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .food-padding{
+        padding: 10%;
+    }
     
     /* --------------------------- */
