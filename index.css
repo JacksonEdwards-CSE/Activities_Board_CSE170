@@ -219,6 +219,8 @@ div h3 a {
         max-height: auto;
         justify-self: center;
         margin: 2%;
+        border-radius: 2px;
+        border: 2px solid green;
     }
     
     /* --------------------------- */
