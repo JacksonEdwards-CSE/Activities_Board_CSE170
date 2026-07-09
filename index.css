@@ -147,6 +147,12 @@ div h3 a {
         max-height: 100%;
         background-color: lightgray;
         padding: 5%;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .card:hover {
+        background-color: blue;
+        color: white;
     }
     
     .card-img{
@@ -167,11 +173,23 @@ div h3 a {
 
     .food-section{
         align-self: center;
+        text-align: center;
         justify-self: center;
     }
 
     .food-padding{
         padding: 10%;
+    }
+
+    .food-alignment{
+        text-align: center;
+    }
+
+    .food-image{
+        max-width: 50%;
+        max-height: auto;
+        justify-self: center;
+        margin: 2%;
     }
     
     /* --------------------------- */
