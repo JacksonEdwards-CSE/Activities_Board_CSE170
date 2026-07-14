@@ -5,6 +5,7 @@ const modal = document.querySelector("dialog");
 const modalImage = document.querySelector("#modal-img")
 const modalTitle = document.querySelector("#modal-title")
 const modalDescription = document.querySelector("#modal-description")
+const modalLink = document.querySelector("#modal-link");
 
 const image = card.querySelector(".card-img");
 const title = card.querySelector(".card-title");
@@ -43,6 +44,7 @@ cards.forEach(card => {
         modalImage.src = clickedCard.querySelector(".card-img").src;
         modalTitle.textContent = clickedCard.querySelector(".card-title").textContent;
         modalDescription.textContent = clickedCard.querySelector(".card-description").textContent;
+        modalLink.href = clickedCard.querySelector("a").href;
 
         modal.showModal();
     });
