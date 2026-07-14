@@ -6,10 +6,12 @@ const modalImage = document.querySelector("#modal-img")
 const modalTitle = document.querySelector("#modal-title")
 const modalDescription = document.querySelector("#modal-description")
 const modalLink = document.querySelector("#modal-link");
+const modalMap = document.querySelector("#modal-map")
 
 const image = card.querySelector(".card-img");
 const title = card.querySelector(".card-title");
 const description = card.querySelector(".card-description");
+const maps = card.querySelector(".card-map");
 
 card.addEventListener("click", toggleModal);
 
@@ -45,6 +47,8 @@ cards.forEach(card => {
         modalTitle.textContent = clickedCard.querySelector(".card-title").textContent;
         modalDescription.textContent = clickedCard.querySelector(".card-description").textContent;
         modalLink.href = clickedCard.querySelector("a").href;
+        modalMap.src = clickedCard.querySelector(".card-map").src
+        
 
         modal.showModal();
     });
